@@ -4,10 +4,12 @@ import './App.css';
 
 import Home from './pages/home/home.component';
 import PaginaArticulos from './pages/articulos/articulos.component';
+import Header from './components/header/header.component';
 
 function App() {
   return (
     <div>
+      <Header/>
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/articulos' component={PaginaArticulos} />

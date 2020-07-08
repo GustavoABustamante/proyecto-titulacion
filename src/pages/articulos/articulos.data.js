@@ -6,27 +6,27 @@ const DATA_ARTICULOS = [
       items: [
         {
           id: 1,
-          nombre: 'Brown Brim',
-          imagenUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-          precio: 25
+          nombre: 'Mujer NY Yankees',
+          imagenUrl: 'https://i.ibb.co/Fsw0CRv/womens-hat-1.jpg',
+          precio: '19.990'
         },
         {
           id: 2,
-          nombre: 'Blue Beanie',
-          imagenUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-          precio: 18
+          nombre: 'Hombre Pittsburgh Pirates',
+          imagenUrl: 'https://i.ibb.co/0cknCxw/mens-hat-1.jpg',
+          precio: 22.990
         },
         {
           id: 3,
-          nombre: 'Brown Cowboy',
-          imagenUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
-          precio: 35
+          nombre: 'Mujer Houston Astros',
+          imagenUrl: 'https://i.ibb.co/Y3WyPSS/womens-hat-2.jpg',
+          precio: 19.990
         },
         {
           id: 4,
-          nombre: 'Grey Brim',
-          imagenUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
-          precio: 25
+          nombre: 'Hombre NY Yankees',
+          imagenUrl: 'https://i.ibb.co/YkH2ycy/mens-hat-2.jpg',
+          precio: 19.990
         },
         {
           id: 5,
