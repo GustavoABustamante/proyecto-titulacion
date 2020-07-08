@@ -29,14 +29,14 @@ class MenuPrincipal extends React.Component {
                 {
                   titulo: 'mujeres',
                   imagenUrl: 'https://i.ibb.co/pKLzTyq/mujer.jpg',
-                  size: 'large',
+                  tamanho: 'large',
                   id: 4,
                   linkUrl: 'shop/womens'
                 },
                 {
                   titulo: 'hombres',
                   imagenUrl: 'https://i.ibb.co/H2L4Tjk/hombre.jpg',
-                  size: 'large',
+                  tamanho: 'large',
                   id: 5,
                   linkUrl: 'shop/mens'
                 }
