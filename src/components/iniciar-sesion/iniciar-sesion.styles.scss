@@ -1,0 +1,15 @@
+.iniciar-sesion {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+
+    .titulo{
+        margin: 10px 0;
+    }
+
+    .botones {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
