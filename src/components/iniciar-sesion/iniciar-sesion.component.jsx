@@ -60,7 +60,7 @@ class IniciarSesion extends React.Component{
                         required />
                     <div className='botones'>
                         <CustomButton type='submit'>Inicia sesión</CustomButton>
-                        <CustomButton onClick={IniciarSesionConGoogle} 
+                        <CustomButton type='button' onClick={IniciarSesionConGoogle} 
                         iniciarSesionGoogle>Inicia sesión Google</CustomButton>
                     </div>
                 </form>
