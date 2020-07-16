@@ -2,8 +2,8 @@ import React from 'react';
 
 import './custom-button.styles.scss';
 
-const CustomButton = ({children, iniciarSesionGoogle, ...parametros}) => (
-    <button className={`${iniciarSesionGoogle ? 'iniciar-sesion-google': ''} custom-button`} {...parametros}>
+const CustomButton = ({children, iniciarSesionGoogle, inverted, ...parametros}) => (
+    <button className={`${inverted ? 'inverted': ''} ${iniciarSesionGoogle ? 'iniciar-sesion-google': ''} custom-button`} {...parametros}>
         {children}
     </button>
 );

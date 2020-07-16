@@ -66,49 +66,49 @@ const DATA_ARTICULOS = [
       nombreRuta: 'zapatillas',
       items: [
         {
-          id: 1,
+          id: 10,
           nombre: 'Adidas NMD',
           imagenUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
           precio: 220
         },
         {
-          id: 2,
+          id: 11,
           nombre: 'Adidas Yeezy',
           imagenUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
           precio: 280
         },
         {
-          id: 3,
+          id: 12,
           nombre: 'Black Converse',
           imagenUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
           precio: 110
         },
         {
-          id: 4,
+          id: 13,
           nombre: 'Nike White AirForce',
           imagenUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
           precio: 160
         },
         {
-          id: 5,
+          id: 14,
           nombre: 'Nike Red High Tops',
           imagenUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
           precio: 160
         },
         {
-          id: 6,
+          id: 15,
           nombre: 'Nike Brown High Tops',
           imagenUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
           precio: 160
         },
         {
-          id: 7,
+          id: 16,
           nombre: 'Air Jordan Limited',
           imagenUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
           precio: 190
         },
         {
-          id: 8,
+          id: 17,
           nombre: 'Timberlands',
           imagenUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
           precio: 200
@@ -121,31 +121,31 @@ const DATA_ARTICULOS = [
       nombreRuta: 'camisetas',
       items: [
         {
-          id: 1,
+          id: 18,
           nombre: 'Black Jean Shearling',
           imagenUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
           precio: 125
         },
         {
-          id: 2,
+          id: 19,
           nombre: 'Blue Jean Jacket',
           imagenUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
           precio: 90
         },
         {
-          id: 3,
+          id: 20,
           nombre: 'Grey Jean Jacket',
           imagenUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
           precio: 90
         },
         {
-          id: 4,
+          id: 21,
           nombre: 'Brown Shearling',
           imagenUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
           precio: 165
         },
         {
-          id: 5,
+          id: 22,
           nombre: 'Tan Trench',
           imagenUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
           precio: 185
@@ -158,43 +158,43 @@ const DATA_ARTICULOS = [
       nombreRuta: 'mujer',
       items: [
         {
-          id: 1,
+          id: 23,
           nombre: 'Blue Tanktop',
           imagenUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
           precio: 25
         },
         {
-          id: 2,
+          id: 24,
           nombre: 'Floral Blouse',
           imagenUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
           precio: 20
         },
         {
-          id: 3,
+          id: 25,
           nombre: 'Floral Dress',
           imagenUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
           precio: 80
         },
         {
-          id: 4,
+          id: 26,
           nombre: 'Red Dots Dress',
           imagenUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
           precio: 80
         },
         {
-          id: 5,
+          id: 27,
           nombre: 'Striped Sweater',
           imagenUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
           precio: 45
         },
         {
-          id: 6,
+          id: 28,
           nombre: 'Yellow Track Suit',
           imagenUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
           precio: 135
         },
         {
-          id: 7,
+          id: 29,
           nombre: 'White Blouse',
           imagenUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
           precio: 20
@@ -207,37 +207,37 @@ const DATA_ARTICULOS = [
       nombreRuta: 'hombre',
       items: [
         {
-          id: 1,
+          id: 30,
           nombre: 'Camo Down Vest',
           imagenUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
           precio: 325
         },
         {
-          id: 2,
+          id: 31,
           nombre: 'Floral T-shirt',
           imagenUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
           precio: 20
         },
         {
-          id: 3,
+          id: 32,
           nombre: 'Black & White Longsleeve',
           imagenUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
           precio: 25
         },
         {
-          id: 4,
+          id: 33,
           nombre: 'Pink T-shirt',
           imagenUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
           precio: 25
         },
         {
-          id: 5,
+          id: 34,
           nombre: 'Jean Long Sleeve',
           imagenUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
           precio: 40
         },
         {
-          id: 6,
+          id: 35,
           nombre: 'Burgundy T-shirt',
           imagenUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
           precio: 25

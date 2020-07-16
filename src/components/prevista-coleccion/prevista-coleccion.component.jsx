@@ -9,8 +9,8 @@ const PrevistaColeccion = ({titulo, items}) => (
         <div className='prevista'>
             {
                 items.filter((item, index) => index < 4)
-                .map(({id, ...parametrosItems}) =>(
-                    <ItemColeccion key={id} {...parametrosItems}/>
+                .map(item =>(
+                    <ItemColeccion key={item.id} item={item}/>
                 ))
             }
         </div>
