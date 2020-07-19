@@ -1,9 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
+import {createStructuredSelector} from 'reselect';
 import {auth} from '../../firebase/firebase.utils';
 import IconoCarrito from '../icono-carrito/icono-carrito.component';
 import DropdownCarrito from '../dropdown-carrito/dropdown-carrito.component';
+import {selectCarritoHidden} from '../../redux/carrito/carrito.selectors';
+import {selectCurrentUser} from '../../redux/user/user.selectors';
 import {ReactComponent as Logo} from '../../assets/logo.svg';
 import './header.styles.scss';
 
@@ -31,9 +34,9 @@ const Header = ({currentUser, hidden}) => (
     </div>
 );
 
-const mapStateToProps = ({user:{currentUser}, carrito:{hidden}}) => ({
-    currentUser,
-    hidden
+const mapStateToProps = createStructuredSelector({
+    currentUser: selectCurrentUser,
+    hidden: selectCarritoHidden
 });
 
 export default connect(mapStateToProps)(Header);

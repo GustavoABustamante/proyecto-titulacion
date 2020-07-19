@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {createStructuredSelector} from 'reselect';
 
 import {toggleCarritoHidden} from '../../redux/carrito/carrito.actions';
 import {selectContadorItemsCarrito} from '../../redux/carrito/carrito.selectors';
@@ -18,8 +19,8 @@ const mapDispatchToProps = dispatch => ({
     toggleCarritoHidden: () => dispatch(toggleCarritoHidden())
 });
 
-const mapStateToProps = (state) => ({
-    contadorItems: selectContadorItemsCarrito(state)
+const mapStateToProps = createStructuredSelector({
+    contadorItems: selectContadorItemsCarrito
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(IconoCarrito);
