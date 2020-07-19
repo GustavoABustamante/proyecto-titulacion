@@ -1,6 +1,8 @@
 const CarritoActionTypes = {
     TOGGLE_CARRITO_HIDDEN: 'TOGGLE_CARRITO_HIDDEN',
-    ADD_ITEM: 'ADD_ITEM'
+    ADD_ITEM: 'ADD_ITEM',
+    BORRAR_ITEM: 'BORRAR_ITEM',
+    BORRAR_ITEM_DEL_CARRITO: 'BORRAR_ITEM_DEL_CARRITO'
 };
 
 export default CarritoActionTypes;

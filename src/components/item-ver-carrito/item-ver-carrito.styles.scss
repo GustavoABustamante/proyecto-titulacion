@@ -23,7 +23,15 @@
     }
   
     .cantidad {
-      padding-left: 20px;
+      display: flex;
+
+      .flecha {
+        cursor: pointer;
+      }
+
+      .valor {
+        margin: 0 10px;
+      }
     }
   
     .boton-eliminar {
