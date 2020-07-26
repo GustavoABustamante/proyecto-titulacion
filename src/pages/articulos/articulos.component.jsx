@@ -1,27 +1,16 @@
 import React from 'react';
-import DATA_ARTICULOS from './articulos.data';
+import {Route} from 'react-router-dom';
 
-import PrevistaColeccion from '../../components/prevista-coleccion/prevista-coleccion.component';
+import VistaColeccion from '../../components/vista-coleccion/vista-coleccion.component';
+import PaginaColeccion from '../coleccion/coleccion.component';
 
-class PaginaArticulos extends React.Component {
-    constructor(param){
-        super(param);
+const PaginaArticulos = ({match}) => (
+    <div className='pagina-articulos'>
+        <Route exact path={`${match.path}`} component={VistaColeccion} />
+        <Route path={`${match.path}/:idColeccion`} component={PaginaColeccion} />
+    </div>
+);
 
-        this.state = {
-            coleccion: DATA_ARTICULOS
-        }
-    }
 
-    render() {
-        const {coleccion} = this.state;
-        return (<div className='pagina-articulos'>
-                    {
-                        coleccion.map(({id, ...parametrosColeccion}) =>(
-                            <PrevistaColeccion key={id} {...parametrosColeccion} />
-                        ))
-                    }
-                </div>)
-    }
-}
 
 export default PaginaArticulos;

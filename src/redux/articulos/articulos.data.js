@@ -1,5 +1,5 @@
-const DATA_ARTICULOS = [
-    {
+const DATA_ARTICULOS = {
+    gorros:{
       id: 1,
       titulo: 'GORROS',
       nombreRuta: 'gorros',
@@ -60,7 +60,7 @@ const DATA_ARTICULOS = [
         }
       ]
     },
-    {
+    zapatillas:{
       id: 2,
       titulo: 'ZAPATILLAS',
       nombreRuta: 'zapatillas',
@@ -115,7 +115,7 @@ const DATA_ARTICULOS = [
         }
       ]
     },
-    {
+    camisetas:{
       id: 3,
       titulo: 'CAMISETAS',
       nombreRuta: 'camisetas',
@@ -152,7 +152,7 @@ const DATA_ARTICULOS = [
         }
       ]
     },
-    {
+    mujeres:{
       id: 4,
       titulo: 'MUJER',
       nombreRuta: 'mujer',
@@ -201,7 +201,7 @@ const DATA_ARTICULOS = [
         }
       ]
     },
-    {
+    hombres:{
       id: 5,
       titulo: 'HOMBRE',
       nombreRuta: 'hombre',
@@ -244,6 +244,6 @@ const DATA_ARTICULOS = [
         }
       ]
     }
-  ]
+  }
 
   export default DATA_ARTICULOS;
