@@ -7,18 +7,29 @@ import './item-coleccion.styles.scss';
 
 const ItemColeccion = ({item, addItem}) => {
     const {nombre, precio, imagenUrl} = item;
+    const formatoMonedaChilena = new Intl.NumberFormat('es-CL', {
+        style: 'currency',
+        currency: 'CLP'
+    });
     return(
     <div className='item-coleccion'>
-        <div className='imagen'
-        style={{
-            backgroundImage: `url(${imagenUrl})`
-        }}
-        />
-        <div className='footer-coleccion'>
-            <span className='nombre'>{nombre}</span>
-            <span className='precio'>{precio}</span>
+        <div className='imagen'>
+            <img src={imagenUrl} alt="Item"/>
         </div>
-        <CustomButton onClick={() => addItem(item)} inverted>Añadir a carrito</CustomButton>
+        
+        <div className='footer-coleccion'>
+            <div className="tallas">
+                <h3>Tallas :</h3>
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+            </div>
+            <h2 className='nombre'>{nombre}</h2>
+            <h1 className='precio'>{formatoMonedaChilena.format(precio)}</h1>
+            <CustomButton onClick={() => addItem(item)} btnAddItem >Añadir a carrito</CustomButton>
+        </div>
+        
     </div>
 )};
 

@@ -61,7 +61,7 @@ class Registrarse extends React.Component {
                         name='displayName'
                         value={displayName}
                         onChange={this.handleChange}
-                        label='Display name'
+                        label='Nombre de usuario'
                         required />
                     
                     <FormInput 

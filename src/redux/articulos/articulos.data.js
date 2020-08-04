@@ -6,57 +6,27 @@ const DATA_ARTICULOS = {
       items: [
         {
           id: 1,
-          nombre: 'Mujer NY Yankees',
-          imagenUrl: 'https://i.ibb.co/Fsw0CRv/womens-hat-1.jpg',
-          precio: '19.990'
+          nombre: 'NY Yankees',
+          imagenUrl: 'https://i.ibb.co/pPymHhm/hat-1.png',
+          precio: 19990
         },
         {
           id: 2,
-          nombre: 'Hombre Pittsburgh Pirates',
-          imagenUrl: 'https://i.ibb.co/0cknCxw/mens-hat-1.jpg',
-          precio: 22.990
+          nombre: 'Detroit Lions',
+          imagenUrl: 'https://i.ibb.co/WfKXCWQ/hat-3.png',
+          precio: 22990
         },
         {
           id: 3,
-          nombre: 'Mujer Houston Astros',
-          imagenUrl: 'https://i.ibb.co/Y3WyPSS/womens-hat-2.jpg',
-          precio: 19.990
+          nombre: 'LA Dodgers',
+          imagenUrl: 'https://i.ibb.co/dkDJf92/hat-2.png',
+          precio: 19990
         },
         {
           id: 4,
-          nombre: 'Hombre NY Yankees',
-          imagenUrl: 'https://i.ibb.co/YkH2ycy/mens-hat-2.jpg',
-          precio: 19.990
-        },
-        {
-          id: 5,
-          nombre: 'Green Beanie',
-          imagenUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
-          precio: 18
-        },
-        {
-          id: 6,
-          nombre: 'Palm Tree Cap',
-          imagenUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
-          precio: 14
-        },
-        {
-          id: 7,
-          nombre: 'Red Beanie',
-          imagenUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
-          precio: 18
-        },
-        {
-          id: 8,
-          nombre: 'Wolf Cap',
-          imagenUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
-          precio: 14
-        },
-        {
-          id: 9,
-          nombre: 'Blue Snapback',
-          imagenUrl: 'https://i.ibb.co/X2VJP2W/blue-snapback.png',
-          precio: 16
+          nombre: 'Denver Broncos',
+          imagenUrl: 'https://i.ibb.co/jHpRVXh/hat-4.png',
+          precio: 19990
         }
       ]
     },
@@ -67,51 +37,27 @@ const DATA_ARTICULOS = {
       items: [
         {
           id: 10,
-          nombre: 'Adidas NMD',
-          imagenUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
-          precio: 220
+          nombre: 'Nike Invictus',
+          imagenUrl: 'https://i.ibb.co/TWCZXxs/zapatilla-1.png',
+          precio: 42990
         },
         {
           id: 11,
-          nombre: 'Adidas Yeezy',
-          imagenUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
-          precio: 280
+          nombre: 'Nike Air Max',
+          imagenUrl: 'https://i.ibb.co/PjD9g6S/zapatilla-3.png',
+          precio: 37990
         },
         {
           id: 12,
-          nombre: 'Black Converse',
-          imagenUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
-          precio: 110
+          nombre: 'Nike Air Force',
+          imagenUrl: 'https://i.ibb.co/wr36xGF/zapatilla-2.png',
+          precio: 29990
         },
         {
           id: 13,
-          nombre: 'Nike White AirForce',
-          imagenUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
-          precio: 160
-        },
-        {
-          id: 14,
-          nombre: 'Nike Red High Tops',
-          imagenUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
-          precio: 160
-        },
-        {
-          id: 15,
-          nombre: 'Nike Brown High Tops',
-          imagenUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
-          precio: 160
-        },
-        {
-          id: 16,
-          nombre: 'Air Jordan Limited',
-          imagenUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
-          precio: 190
-        },
-        {
-          id: 17,
-          nombre: 'Timberlands',
-          imagenUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
-          precio: 200
+          nombre: 'Nike Air Jordan',
+          imagenUrl: 'https://i.ibb.co/Bz4gtSY/zapatilla-4.png',
+          precio: 39990
         }
       ]
     },
@@ -122,33 +68,27 @@ const DATA_ARTICULOS = {
       items: [
         {
           id: 18,
-          nombre: 'Black Jean Shearling',
-          imagenUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
-          precio: 125
+          nombre: 'Toronto Blue Jays',
+          imagenUrl: 'https://i.ibb.co/wdmC5wx/camiseta-1.png',
+          precio: 49990
         },
         {
           id: 19,
-          nombre: 'Blue Jean Jacket',
-          imagenUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
-          precio: 90
+          nombre: 'Houston Rockets',
+          imagenUrl: 'https://i.ibb.co/Y7kzW41/caiseta-2.png',
+          precio: 49990
         },
         {
           id: 20,
-          nombre: 'Grey Jean Jacket',
-          imagenUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
-          precio: 90
+          nombre: 'NE Patriots',
+          imagenUrl: 'https://i.ibb.co/51NDqpg/camiseta-3.png',
+          precio: 49990
         },
         {
           id: 21,
-          nombre: 'Brown Shearling',
-          imagenUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
-          precio: 165
-        },
-        {
-          id: 22,
-          nombre: 'Tan Trench',
-          imagenUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
-          precio: 185
+          nombre: 'Buffalo Bills',
+          imagenUrl: 'https://i.ibb.co/vV5qkh3/camiseta-4.png',
+          precio: 49990
         }
       ]
     },
@@ -159,27 +99,27 @@ const DATA_ARTICULOS = {
       items: [
         {
           id: 23,
-          nombre: 'Blue Tanktop',
-          imagenUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
-          precio: 25
+          nombre: 'New Orleans Saints',
+          imagenUrl: 'https://i.ibb.co/1sNHZJ6/camiseta-5.png',
+          precio: 49990
         },
         {
           id: 24,
-          nombre: 'Floral Blouse',
-          imagenUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-          precio: 20
+          nombre: 'Nike Max Running',
+          imagenUrl: 'https://i.ibb.co/QPnmm6J/zapatilla-5.png',
+          precio: 30990
         },
         {
           id: 25,
-          nombre: 'Floral Dress',
-          imagenUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
-          precio: 80
+          nombre: 'Detroit Tigers',
+          imagenUrl: 'https://i.ibb.co/gTgNJ3y/hat-5.png',
+          precio: 19990
         },
         {
           id: 26,
-          nombre: 'Red Dots Dress',
-          imagenUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
-          precio: 80
+          nombre: 'Toronto Blue Jays',
+          imagenUrl: 'https://i.ibb.co/QYgfFSg/camiseta-6.png',
+          precio: 49990
         },
         {
           id: 27,
@@ -208,39 +148,27 @@ const DATA_ARTICULOS = {
       items: [
         {
           id: 30,
-          nombre: 'Camo Down Vest',
-          imagenUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
-          precio: 325
+          nombre: 'Chicago White Sox',
+          imagenUrl: 'https://i.ibb.co/gw79srf/camiseta-7.png',
+          precio: 49990
         },
         {
           id: 31,
-          nombre: 'Floral T-shirt',
-          imagenUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
-          precio: 20
+          nombre: 'Nike Fliknit Running',
+          imagenUrl: 'https://i.ibb.co/9wzH9kf/zapatilla-6.png',
+          precio: 34990
         },
         {
           id: 32,
-          nombre: 'Black & White Longsleeve',
-          imagenUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
-          precio: 25
+          nombre: 'Philadelphia Flyers',
+          imagenUrl: 'https://i.ibb.co/HH116Ff/hat-6.png',
+          precio: 19990
         },
         {
           id: 33,
-          nombre: 'Pink T-shirt',
-          imagenUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
-          precio: 25
-        },
-        {
-          id: 34,
-          nombre: 'Jean Long Sleeve',
-          imagenUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
-          precio: 40
-        },
-        {
-          id: 35,
-          nombre: 'Burgundy T-shirt',
-          imagenUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
-          precio: 25
+          nombre: 'Los Angeles Rams',
+          imagenUrl: 'https://i.ibb.co/1rXJHTD/camiseta-8.png',
+          precio: 49990
         }
       ]
     }

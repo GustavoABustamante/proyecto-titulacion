@@ -1,15 +1,20 @@
 .iniciar-sesion {
-    width: 380px;
+    width: 480px;
     display: flex;
     flex-direction: column;
+    background: #1f1f1f;
+    border-radius: 15px;
+    padding: 20px;
 
     .titulo{
         margin: 10px 0;
     }
 
     .botones {
+        height: 110px;
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         justify-content: space-between;
-        align-items: center;
     }
 }

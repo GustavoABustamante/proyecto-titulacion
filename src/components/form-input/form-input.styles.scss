@@ -1,5 +1,5 @@
 $sub-color: grey;
-$main-color: black;
+$main-color: white;
 
 @mixin shrinkLabel {
   top: -14px;
@@ -13,7 +13,7 @@ $main-color: black;
 
   .form-input {
     background: none;
-    background-color: white;
+    background-color: #1f1f1f;
     color: $sub-color;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
@@ -26,6 +26,7 @@ $main-color: black;
 
     &:focus {
       outline: none;
+      color: $main-color;
     }
 
     &:focus ~ .form-input-label {
@@ -35,6 +36,8 @@ $main-color: black;
 
   input[type='password'] {
     letter-spacing: 0.3em;
+
+    
   }
 
   .form-input-label {
@@ -51,4 +54,18 @@ $main-color: black;
       @include shrinkLabel();
     }
   }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #1f1f1f inset;
+  transition: background-color 5000s ease-in-out 0s;
 }

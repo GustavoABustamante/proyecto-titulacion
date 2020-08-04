@@ -3,13 +3,19 @@ import {connect} from 'react-redux';
 import {createStructuredSelector} from 'reselect';
 
 import ItemVerCarrito from '../../components/item-ver-carrito/item-ver-carrito.component';
+import BotonStripeCheckout from '../../components/boton-stripe/boton-stripe.component';
 
 import {selectItemsCarrito, selectTotalCarrito} from '../../redux/carrito/carrito.selectors';
 
 
 import './ver-carrito.styles.scss';
 
-const PaginaVerCarrito = ({itemsCarrito, total}) => (
+const PaginaVerCarrito = ({itemsCarrito, total}) => {
+    const formatoMonedaChilena = new Intl.NumberFormat('es-CL', {
+        style: 'currency',
+        currency: 'CLP'
+    });
+    return(
     <div className='pagina-carrito'>
         <div className='header-pagina-carrito'>
             <div className='header-block'>
@@ -34,10 +40,11 @@ const PaginaVerCarrito = ({itemsCarrito, total}) => (
             )
         }
         <div className='total'>
-            <span>TOTAL: ${total}</span>
+            <span>TOTAL: {formatoMonedaChilena.format(total)}</span>
         </div>
+        <BotonStripeCheckout precio={total} />
     </div>
-);
+)};
 
 const mapStateToProps = createStructuredSelector({
     itemsCarrito: selectItemsCarrito,

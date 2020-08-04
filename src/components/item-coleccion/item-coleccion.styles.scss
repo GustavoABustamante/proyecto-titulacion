@@ -2,52 +2,150 @@
     width: 22vw;
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 450px;
     align-items: center;
     position: relative;
-  
-    .imagen {
+    border-radius: 20px;
+    overflow: hidden;
+    background: #1f1f1f;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 95%;
-      background-size: cover;
-      background-position: center;
-      margin-bottom: 5px;
+      height: 100%;
+      background: #f8f6f8;
+      clip-path: circle(150px at 80% 20%);
+      transition: .5s ease-in-out;
     }
 
-    .custom-button {
-      width: 80%;
-      opacity: 0.7;
+    &:after{
+      content: 'New era';
       position: absolute;
-      top: 255px;
-      display: none;
-      border: none;
+      top: 50%;
+      left: 0%;
+      font-size: 4.2em;
+      font-weight: 800;
+      font-style: italic;
+      color: rgba(255, 255, 255, .04);
+    }
+  
+    .imagen {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-60%);
+      z-index: 1000;
+      width: 100%;
+      height: 220px;
+      transition: .5s;
+
+      & img{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(-5deg);
+        width: 240px;
+        z-index: 1000;
+      }
     }
 
     &:hover {
+
+      &:before{
+        clip-path: circle(300px at 80% -20%);
+      }
+
       .imagen {
-        opacity: 0.95;
+        top: 0%;
+        transform: translateY(20%);
+      }
+
+      .footer-coleccion {
+        height: 210px;
+
+        & .tallas {
+          opacity: 1;
+          visibility: visible;
+          transition-delay: 0.5s;
+
+          & span{
+            z-index: 2000;
+          }
+        }
       }
 
       .custom-button {
-        opacity: 0.5;
-        display: flex;
+        opacity: 1;
+        transform: translateY(0px);
+        transition-delay: .75s;
       }
     }
   
     .footer-coleccion {
+      position: absolute;
+      bottom: 0;
       width: 100%;
-      height: 5%;
-      display: flex;
-      justify-content: space-between;
-      font-size: 18px;
-  
-      .nombre {
-        width: 80%;
-        margin-bottom: 15px;
+      height: 160px;
+      text-align: center;
+      transition: 1s;
+      z-index: 10;
+
+      .tallas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px 0 20px;
+        transition: .5s;
+        opacity: 0;
+        visibility: hidden;
+
+        & h3{
+          color: #fff;
+          font-weight: 600;
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin-right: 10px;
+        }
+
+        & span {
+          width: 26px;
+          height: 26px;
+          text-align: center;
+          line-height: 26px;
+          font-size: 14px;
+          display: inline-block;
+          color: #111;
+          background: #fff;
+          margin: 0 5px;
+          transition: .5s;
+          color: #111;
+          border-radius: 4px;
+          cursor: pointer;
+
+          &:hover{
+            background: #111;   
+            color: #fff;
+          }
+        }
       }
   
+      .nombre {
+        position: relative;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #fff;
+        margin: 0;
+      }
+
       .precio {
-        width: 20%;
+        position: relative;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #fff;
+        margin: 0;
       }
     }
   }

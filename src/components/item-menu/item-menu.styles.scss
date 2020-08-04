@@ -5,9 +5,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
     margin: 0 7.5px 15px;
     overflow: hidden;
+    border-radius: 15px;
 
     &:hover {
       cursor: pointer;
@@ -31,6 +31,11 @@
 
     &.large{
       height: 380px;
+    }
+
+    &.extra-large{
+      height: 400px;
+      width: 100%;
     }
   
     &:first-child {
@@ -57,18 +62,14 @@
       justify-content: center;
       border: 1px solid white;
       background-color: transparent;
-      //opacity: 0.5;
       position: absolute;
       color: white;
   
       .titulo {
         font-weight: bold;
-        //margin-bottom: 6px;
-        //font-size: 22px;
-        //color: #4a4a4a;
-        font-size: 40px;
+        font-size: 30px;
         margin: 0;
-        text-shadow: 0.5vmin 0.5vmin 0 #0c0c0c;
+        //text-shadow: 0.5vmin 0.5vmin 0 #0c0c0c;
       }
   
       .subtitulo {

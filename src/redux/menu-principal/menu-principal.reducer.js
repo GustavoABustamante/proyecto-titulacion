@@ -1,6 +1,13 @@
 const INITIAL_STATE = {
     secciones: [
         {
+          titulo: 'Ver artículos',
+          imagenUrl: 'https://i.ibb.co/K026QK2/fondo-store-mini.png',
+          tamanho:'extra-large',
+          id: 0,
+          linkUrl: 'articulos'
+        },
+        {
           titulo: 'gorros',
           imagenUrl: 'https://i.ibb.co/6J94TC8/hats.jpg',
           id: 1,

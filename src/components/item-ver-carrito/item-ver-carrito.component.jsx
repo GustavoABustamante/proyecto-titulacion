@@ -5,6 +5,10 @@ import './item-ver-carrito.styles.scss';
 
 const ItemVerCarrito = ({itemCarrito, borrarItem, addItem, restarItem}) => {
     const {nombre, imagenUrl, quantity, precio} = itemCarrito;
+    const formatoMonedaChilena = new Intl.NumberFormat('es-CL', {
+        style: 'currency',
+        currency: 'CLP'
+    });
     return (
     <div className='item-ver-carrito'>
         <div className='contenedor-imagen'>
@@ -16,7 +20,7 @@ const ItemVerCarrito = ({itemCarrito, borrarItem, addItem, restarItem}) => {
             <span className='valor'>{quantity}</span>
             <div className='flecha' onClick={() => addItem(itemCarrito)}>&#10095;</div>
             </span>
-        <span className='precio'>{precio}</span>
+        <span className='precio'>{formatoMonedaChilena.format(precio)}</span>
         <div className='boton-eliminar' onClick={() => borrarItem(itemCarrito)}>&#10006;</div> 
     </div>
 )};

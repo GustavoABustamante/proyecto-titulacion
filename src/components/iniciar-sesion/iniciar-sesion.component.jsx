@@ -59,9 +59,9 @@ class IniciarSesion extends React.Component{
                         label='password'
                         required />
                     <div className='botones'>
-                        <CustomButton type='submit'>Inicia sesión</CustomButton>
+                        <CustomButton type='submit'>Iniciar sesión</CustomButton>
                         <CustomButton type='button' onClick={IniciarSesionConGoogle} 
-                        iniciarSesionGoogle>Inicia sesión Google</CustomButton>
+                        iniciarSesionGoogle>Iniciar sesión con Google</CustomButton>
                     </div>
                 </form>
             </div>

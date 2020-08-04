@@ -7,24 +7,27 @@ import IconoCarrito from '../icono-carrito/icono-carrito.component';
 import DropdownCarrito from '../dropdown-carrito/dropdown-carrito.component';
 import {selectCarritoHidden} from '../../redux/carrito/carrito.selectors';
 import {selectCurrentUser} from '../../redux/user/user.selectors';
-import {ReactComponent as Logo} from '../../assets/logo.svg';
+//import {ReactComponent as Logo} from '../../assets/logo.svg';
 import './header.styles.scss';
 
 const Header = ({currentUser, hidden}) => (
     <div className='header'>
         <Link className='contenedor-logo' to='/'>
-            <Logo className='logo' />
+            <img className='logo' src="https://i.ibb.co/sVCvWkj/logo.png" alt="logo"/>
         </Link>
         <div className='opciones'>
             <Link className='opcion' to='/articulos'>
                 ARTICULOS
             </Link>
-            <Link className='opcion' to='/articulos'>
+            <Link className='opcion' to='/'>
                 CONTACTO
             </Link>
             {
                 currentUser ?
-                <div className='opcion' onClick={() => auth.signOut()}>CERRAR SESIÓN</div>
+                <div className='acceso-salida'>
+                    <Link className='opcion' to='/'>{currentUser.displayName}</Link>   
+                    <div className='opcion' onClick={() => auth.signOut()}>CERRAR SESIÓN</div>
+                </div>
                 :
                 <Link className='opcion' to='/iniciarsesion'>INICIAR SESIÓN</Link>
             }

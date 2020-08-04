@@ -1,18 +1,33 @@
 .header {
+    background-color: #f7f9ff;
     height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    border-radius: 30px;
+    padding: 0 40px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
   
     .contenedor-logo {
       height: 100%;
       width: 70px;
-      padding: 25px;
+    }
+
+    .logo {
+      height: 80px;
+    }
+    
+    .acceso-salida {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      text-transform: uppercase;
     }
   
     .opciones {
-      width: 50%;
+      width: 70%;
       height: 100%;
       display: flex;
       align-items: center;

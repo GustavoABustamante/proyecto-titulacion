@@ -1,7 +1,10 @@
 .registrarse {
     display: flex;
     flex-direction: column;
-    width: 380px;
+    width: 480px;
+    background: #1f1f1f;
+    border-radius: 15px;
+    padding: 20px;
   
     .titulo {
       margin: 10px 0;
