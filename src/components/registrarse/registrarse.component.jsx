@@ -54,7 +54,7 @@ class Registrarse extends React.Component {
         return(
             <div className='registrarse'>
                 <h2 className='titulo'>¡No estoy regitrado!</h2>
-                <span>Resgitrarse con email y contraseña</span>
+                <span>Resgitrarse con email y contraseña.</span>
                 <form className='formulario-registrarse' onSubmit={this.handleSubmit}>
                     <FormInput 
                         type='text'

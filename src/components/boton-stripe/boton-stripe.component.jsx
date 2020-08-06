@@ -2,7 +2,11 @@ import React from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 
 const BotonStripeCheckout = ({precio}) => {
-    const precioStripe = precio * 100;
+    const formatoMonedaChilena = new Intl.NumberFormat('es-CL', {
+        style: 'currency',
+        currency: 'CLP'
+    });
+    //const precioStripe = precio * 100;
     const publishableKey = 'pk_test_51H9kQHF2PFa2g8LOTxQtZsJkQrmjNHpphuw0EwCWWhrZM2OF58jwZtS5i8cprdS5cBBHlY1PcU5pW7NidaJ5Jszc00iELHwjTB';
 
     const onToken = token => {
@@ -13,12 +17,13 @@ const BotonStripeCheckout = ({precio}) => {
     return(
         <StripeCheckout 
             label='Pagar ahora' 
-            name=''
+            name='miTienda'
+            currency='CLP'
             billingAddress
             shippingAddress
-            image='https://i.ibb.co/H2L4Tjk/hombre.jpg'
-            description={`El total de la compras es $${precio}`}
-            amount={precioStripe}
+            image='https://i.ibb.co/sVCvWkj/logo.png'
+            description={`El total de la compra es ${formatoMonedaChilena.format(precio)}`}
+            amount={precio}
             panelLabel='Pagar ahora'
             token={onToken}
             stripeKey={publishableKey}

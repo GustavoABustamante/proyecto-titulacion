@@ -40,7 +40,7 @@ class IniciarSesion extends React.Component{
         return(
             <div className='iniciar-sesion'>
                 <h2 className='titulo'>¡Ya estoy registrado!</h2>
-                <span>Inicia sesión ingresando tu email y contraseña</span>
+                <span>Inicia sesión ingresando tu email y contraseña.</span>
 
                 <form onSubmit={this.handleSubmit}>
                     <FormInput 
