@@ -39,21 +39,27 @@ const PaginaVerCarrito = ({itemsCarrito, total}) => {
                 (<ItemVerCarrito key={itemCarrito.id} itemCarrito={itemCarrito} />)
             )
         }
-        <div className='total'>
-        <div className='tarjeta-prueba'>
-            <div className='contenido-tarjeta'>
-                <IconoVisa id='logo-visa' />
-                <h5 className='titulo-tarjeta'>Tarjeta de prueba</h5>
-                <h6>Card Number</h6>
-                <h5 className='numeros-tarjeta'>4242 4242 4242 4242</h5>
-                <h6>Expiration<span>CVC</span></h6>
-                <h5 className='numeros-tarjeta'>03 / 28<span>123</span></h5>
-            </div>
-            <div className='wave'></div>
-        </div>
-            <span>TOTAL: {formatoMonedaChilena.format(total)}</span>
-        </div>
-        <BotonStripeCheckout precio={total} />
+        {
+            itemsCarrito.length ? 
+            (<div className='container-total'>
+                <div className='total'>
+                <div className='tarjeta-prueba'>
+                    <div className='contenido-tarjeta'>
+                        <IconoVisa id='logo-visa' />
+                        <h5 className='titulo-tarjeta'>Tarjeta de prueba</h5>
+                        <h6>Card Number</h6>
+                        <h5 className='numeros-tarjeta'>4242 4242 4242 4242</h5>
+                        <h6>Expiration<span>CVC</span></h6>
+                        <h5 className='numeros-tarjeta'>03 / 28<span>123</span></h5>
+                    </div>
+                    <div className='wave'></div>
+                </div>
+                    <span>TOTAL: {formatoMonedaChilena.format(total)}</span>
+                </div>
+            <BotonStripeCheckout precio={total} />
+            </div>):(<h1>Carrito vacio</h1>)
+        }
+        
     </div>
 )};
 
