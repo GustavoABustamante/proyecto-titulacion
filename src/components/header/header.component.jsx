@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {createStructuredSelector} from 'reselect';
 import {auth} from '../../firebase/firebase.utils';
@@ -8,33 +7,34 @@ import DropdownCarrito from '../dropdown-carrito/dropdown-carrito.component';
 import {selectCarritoHidden} from '../../redux/carrito/carrito.selectors';
 import {selectCurrentUser} from '../../redux/user/user.selectors';
 //import {ReactComponent as Logo} from '../../assets/logo.svg';
-import './header.styles.scss';
+
+import {ContenedorHeader, ContenedorLogo, ContenedorOpciones, LinkOpcion, ContenedorAccesoSalida} from './header.styles';
 
 const Header = ({currentUser, hidden}) => (
-    <div className='header'>
-        <Link className='contenedor-logo' to='/'>
+    <ContenedorHeader>
+        <ContenedorLogo to='/'>
             <img className='logo' src="https://i.ibb.co/sVCvWkj/logo.png" alt="logo"/>
-        </Link>
-        <div className='opciones'>
-            <Link className='opcion' to='/articulos'>
+        </ContenedorLogo>
+        <ContenedorOpciones>
+            <LinkOpcion to='/articulos'>
                 ARTICULOS
-            </Link>
-            <Link className='opcion' to='/'>
+            </LinkOpcion>
+            <LinkOpcion to='/'>
                 CONTACTO
-            </Link>
+            </LinkOpcion>
             {
                 currentUser ?
-                <div className='acceso-salida'>
-                    <Link className='opcion' to='/'>{currentUser.displayName}</Link>   
-                    <div className='opcion' onClick={() => auth.signOut()}>CERRAR SESIÓN</div>
-                </div>
+                <ContenedorAccesoSalida>
+                    <LinkOpcion to='/'>{currentUser.displayName}</LinkOpcion>   
+                    <LinkOpcion as='div' className='opcion' onClick={() => auth.signOut()}>CERRAR SESIÓN</LinkOpcion>
+                </ContenedorAccesoSalida>
                 :
-                <Link className='opcion' to='/iniciarsesion'>INICIAR SESIÓN</Link>
+                <LinkOpcion to='/iniciarsesion'>INICIAR SESIÓN</LinkOpcion>
             }
             <IconoCarrito />
-        </div>
+        </ContenedorOpciones>
         {hidden ? null:<DropdownCarrito />}
-    </div>
+    </ContenedorHeader>
 );
 
 const mapStateToProps = createStructuredSelector({

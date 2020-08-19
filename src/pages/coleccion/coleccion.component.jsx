@@ -7,6 +7,7 @@ import {selectColeccion} from '../../redux/articulos/articulos.selectors';
 import './coleccion.styles.scss';
 
 const PaginaColeccion = ({coleccion}) => {
+    console.log(coleccion);
     const {titulo, items} = coleccion;
     return(
     <div className='pagina-coleccion'>

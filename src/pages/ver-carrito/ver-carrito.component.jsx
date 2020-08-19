@@ -59,7 +59,6 @@ const PaginaVerCarrito = ({itemsCarrito, total}) => {
             <BotonStripeCheckout precio={total} />
             </div>):(<h1>Carrito vacio</h1>)
         }
-        
     </div>
 )};
 

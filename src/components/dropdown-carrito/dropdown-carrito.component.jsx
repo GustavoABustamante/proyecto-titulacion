@@ -18,7 +18,7 @@ const DropdownCarrito = ({itemsCarrito, history, dispatch}) => (
             }
         </div>
         <CustomButton onClick={() => {
-            history.push('./carrito');
+            history.push('/carrito');
             dispatch(toggleCarritoHidden());
             }} >VER CARRITO</CustomButton>
     </div>

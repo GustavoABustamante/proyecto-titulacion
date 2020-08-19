@@ -1,11 +1,12 @@
 import React from 'react';
 import MenuPrincipal from '../../components/menu-principal/menu-principal.component';
-import './home.styles.scss';
+
+import {ContenedorHomePage} from './home.styles';
 
 const Home = () => (
-    <div className='home'>
+    <ContenedorHomePage>
         <MenuPrincipal/>
-    </div>
+    </ContenedorHomePage>
 );
 
 export default Home;
